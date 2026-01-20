@@ -14,8 +14,8 @@ function App() {
       </div>
       <div className='flex flex-col'>
         <img src={illustration} alt="illustration" className='w-[502px] h-[330px] object-cover object-left ml-4 mb-9'></img>
-        <h1 className='font-bold text-[40px] leading-[46px] text-gray-950'>More than just shorter links</h1>
-        <p className='text-gray-500'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+        <h1 className='font-bold text-[40px] leading-[46px] text-gray-950 mb-4'>More than just shorter links</h1>
+        <p className='text-[18px] text-gray-500 px-5 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
         <div>Get Started</div>
       </div>
     </div>
