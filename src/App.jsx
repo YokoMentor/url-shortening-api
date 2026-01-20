@@ -6,14 +6,14 @@ import illustration from './images/illustration-working.svg'
 function App() {
   return (
     <div className="flex flex-col min-h-screen justify-center font-display text-center">
-      <div className='flex flex-row'>
+      <div className='flex flex-row items-center justify-between px-5'>
         <img src={logo} alt="logo"></img>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-9 stroke-gray-500">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </div>
       <div>
-        <img src={illustration} alt="illustration"></img>
+        <img src={illustration} alt="illustration" className='w-[502px] h-[330px]'></img>
         <h1 className='font-bold text-lg text-gray-950'>More than just shorter links</h1>
         <p className='text-gray-500'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
         <div>Get Started</div>
