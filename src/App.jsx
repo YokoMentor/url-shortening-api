@@ -27,6 +27,10 @@ function App() {
             <button className='w-[279px] h-[50px] rounded-md bg-primary-blue text-[18px] text-white font-bold mt-4'>Shorten it!</button>
         </div>
       </form>
+      <div>
+        <h2>Advanced Statistics</h2>
+        <p>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
+      </div>
       </div>
     </div>
   )
