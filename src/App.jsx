@@ -19,17 +19,17 @@ function App() {
         <p className='text-[18px] text-gray-500 px-5 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
         <div>Get Started</div>
       </div>
-      <form className='flex flex-col justify-center items-center w-[327px] h-[160px] bg-primary-purple rounded-xl mt-8'>
+      <form className='flex flex-col justify-center items-center w-[327px] h-[160px] bg-primary-purple rounded-xl mt-8 mb-22'>
         <div className='flex flex-col'>
             <label htmlFor="name" className='mb-2'></label>
             <input type="text" id="name" placeholder='Shorten a link here...'
             className='text-[16px] text-gray-700 w-[279px] h-[50px] rounded-md bg-white cursor-pointer pl-4'/>
-            <button className='w-[279px] h-[50px] rounded-md bg-primary-blue text-[18px] text-white font-bold mt-4'>Shorten it!</button>
+            <button className='w-[279px] h-[48px] rounded-md bg-primary-blue text-[18px] text-white font-bold mt-4'>Shorten it!</button>
         </div>
       </form>
-      <div>
-        <h2>Advanced Statistics</h2>
-        <p>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
+      <div className='px-5'>
+        <h2 className='font-bold text-[27px] text-gray-950 mb-5'>Advanced Statistics</h2>
+        <p className='text-[16px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
       </div>
       </div>
     </div>
