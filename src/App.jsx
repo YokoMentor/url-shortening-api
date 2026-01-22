@@ -2,6 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import logo from './images/logo.svg'
 import illustration from './images/illustration-working.svg'
+import brandRecognition from './images/icon-brand-recognition.svg'
+import detailedRecords from './images/icon-detailed-records.svg'
+import fullyCustom from './images/icon-fully-customizable.svg'
 
 function App() {
   return (
@@ -30,6 +33,21 @@ function App() {
       <div className='px-5'>
         <h2 className='font-bold text-[27px] text-gray-950 mb-5'>Advanced Statistics</h2>
         <p className='text-[16px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
+      </div>
+      <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center w-[327px] h-[268px] bg-primary-purple rounded-md mt-8 mb-22 px-5'>
+          <div className='bg-white bg-[url(./images/icon-brand-recognition.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full'></div>
+          <h3 className='font-bold text-[22px] text-gray-950 mb-5'>Brand Recognition</h3>
+          <p className='text-gray-500 text-[15px] leading-[27px]'>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
+        <div className='flex flex-col justify-center w-[327px] h-[268px] bg-primary-purple rounded-md mt-8 mb-22 px-5'>
+          <h3 className='font-bold text-[22px] text-gray-950 mb-5'>Detailed Records</h3>
+          <p className='text-gray-500 text-[15px] leading-[27px]'>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+        </div>
+        <div className='flex flex-col justify-center w-[327px] h-[268px] bg-primary-purple rounded-md mt-8 mb-22 px-5'>
+          <h3 className='font-bold text-[22px] text-gray-950 mb-5'>Fully Customizable</h3>
+          <p className='text-gray-500 text-[15px] leading-[27px]'>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+        </div>
       </div>
       </div>
     </div>
