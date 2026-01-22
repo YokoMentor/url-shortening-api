@@ -19,33 +19,37 @@ function App() {
         <p className='text-[18px] text-gray-500 px-5 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
         <div>Get Started</div>
       </div>
-      <form className='flex flex-col justify-center items-center w-[327px] h-[160px] bg-primary-purple rounded-xl mt-8 mb-22'>
-        <div className='flex flex-col'>
+      <div className='relative flex flex-col justify-center items-center mt-30'>
+        <form className='flex flex-col justify-center items-center w-[327px] h-[160px] bg-primary-purple rounded-xl absolute bottom'>
+          <div className='flex flex-col'>
             <label htmlFor="name" className='mb-2'></label>
             <input type="text" id="name" placeholder='Shorten a link here...'
             className='text-[16px] text-gray-700 w-[279px] h-[50px] rounded-md bg-white cursor-pointer pl-4'/>
             <button className='w-[279px] h-[48px] rounded-md bg-primary-blue text-[18px] text-white font-bold mt-4'>Shorten it!</button>
-        </div>
-      </form>
-      <div className='px-5'>
-        <h2 className='font-bold text-[27px] text-gray-950 mb-5'>Advanced Statistics</h2>
-        <p className='text-[16px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
+          </div>
+        </form>
       </div>
-      <div className='flex flex-col justify-center items-center'>
-        <div className='relative flex flex-col justify-center items-center w-[327px] h-[268px] bg-white rounded-md mt-8 mb-22 px-5'>
-          <div className='bg-primary-purple bg-[url(./images/icon-brand-recognition.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
-          <h3 className='font-bold text-[22px] text-gray-950 mb-5'>Brand Recognition</h3>
-          <p className='text-gray-500 text-[15px] leading-[27px]'>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+      <div className='flex flex-col bg-gray-400 pt-42'>
+        <div className='px-5'>
+          <h2 className='font-bold text-[27px] text-gray-950 mb-5'>Advanced Statistics</h2>
+          <p className='text-[16px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
         </div>
-        <div className='relative flex flex-col justify-center items-center w-[327px] h-[268px] bg-white rounded-md mt-8 mb-22 px-5'>
-          <div className='bg-primary-purple bg-[url(./images/icon-detailed-records.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
-          <h3 className='font-bold text-[22px] text-gray-950 mb-5'>Detailed Records</h3>
-          <p className='text-gray-500 text-[15px] leading-[27px]'>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
-        </div>
-        <div className='relative flex flex-col justify-center items-center w-[327px] h-[268px] bg-white rounded-md mt-8 mb-22 px-5'>
-          <div className='bg-primary-purple bg-[url(./images/icon-fully-customizable.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
-          <h3 className='font-bold text-[22px] text-gray-950 mb-5'>Fully Customizable</h3>
-          <p className='text-gray-500 text-[15px] leading-[27px]'>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+        <div className='flex flex-col justify-center items-center'>
+          <div className='relative flex flex-col justify-center items-center w-[327px] h-[268px] bg-white rounded-md mt-8 mb-22 px-5'>
+            <div className='bg-primary-purple bg-[url(./images/icon-brand-recognition.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
+            <h3 className='font-bold text-[22px] text-gray-950 mb-5'>Brand Recognition</h3>
+            <p className='text-gray-500 text-[15px] leading-[27px]'>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+          <div className='relative flex flex-col justify-center items-center w-[327px] h-[268px] bg-white rounded-md mt-8 mb-22 px-5'>
+            <div className='bg-primary-purple bg-[url(./images/icon-detailed-records.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
+            <h3 className='font-bold text-[22px] text-gray-950 mb-5'>Detailed Records</h3>
+            <p className='text-gray-500 text-[15px] leading-[27px]'>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+          </div>
+          <div className='relative flex flex-col justify-center items-center w-[327px] h-[268px] bg-white rounded-md mt-8 mb-22 px-5'>
+            <div className='bg-primary-purple bg-[url(./images/icon-fully-customizable.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
+            <h3 className='font-bold text-[22px] text-gray-950 mb-5'>Fully Customizable</h3>
+            <p className='text-gray-500 text-[15px] leading-[27px]'>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+          </div>
         </div>
       </div>
       </div>
