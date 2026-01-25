@@ -14,7 +14,7 @@ function App() {
       </div>
       <div className='flex flex-col items-center'>
       <div className='flex flex-col'>
-        <img src={illustration} alt="illustration" className='w-[502px] h-[330px] object-cover mb-9 object-left translate-x-6'></img>
+        <img src={illustration} alt="illustration" className='w-[502px] h-[330px] object-cover mb-9 object-left'></img>
         <div className='flex flex-col'>
           <h1 className='font-bold text-[40px] leading-[46px] text-gray-950 mb-4'>More than just shorter links</h1>
           <p className='text-[18px] text-gray-500 px-5 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
@@ -53,6 +53,10 @@ function App() {
             <p className='text-gray-500 text-[15px] leading-[27px]'>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
           </div>
         </div>
+      </div>
+      <div className='flex flex-col justify-content items-center bg-primary-purple h-[300px] w-full'>
+        <h2 className='font-bold text-[27px] text-white mb-5'>Boost your links today</h2>
+        <div>Get Started</div>
       </div>
       </div>
     </div>
