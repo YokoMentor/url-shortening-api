@@ -18,7 +18,7 @@ function App() {
       </div>
       <div className='flex flex-col items-center'>
       <div className='flex flex-col md:flex-row-reverse md:text-left'>
-        <img src={illustration} alt="illustration" className='w-[502px] h-[330px] md:w-[737px] h-[484px] object-cover mb-9 object-left'></img>
+        <img src={illustration} alt="illustration" className='w-[502px] h-[330px] md:w-[737px] md:h-[484px] object-cover mb-9 object-left'></img>
         <div className='flex flex-col'>
           <h1 className='font-bold text-[40px] md:text-[80px] leading-[46px] md:leading-[86px] text-gray-950 mb-4 md:mb-1 md:tracking-tight'>More than just shorter links</h1>
           <p className='text-[18px] md:text-[22px] text-gray-500 pl-5 pr-5 md:pl-0 md:pr-26 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
@@ -26,7 +26,7 @@ function App() {
         </div>
       </div>
       <div className='relative flex flex-col justify-center items-center mt-30'>
-        <form className='flex flex-col justify-center items-center w-[327px] md:w-[1110px] h-[160px] md:h-[168px] bg-primary-purple rounded-xl absolute bottom'>
+        <form className='flex flex-col justify-center items-center w-[327px] md:w-[1110px] h-[160px] md:h-[168px] bg-[url(./images/bg-shorten-mobile.svg)] md:bg-[url(./images/bg-shorten-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple rounded-xl absolute bottom'>
           <div className='flex flex-col md:flex-row justify-center items-center'>
             <label htmlFor="name" className='mb-2'></label>
             <input type="text" id="name" placeholder='Shorten a link here...'
@@ -58,7 +58,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='bg-primary-purple h-[300px] w-full'>
+      <div className='bg-[url(./images/bg-boost-mobile.svg)] md:bg-[url(./images/bg-boost-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple h-[300px] w-full'>
         <h2 className='font-bold text-[27px] text-white mt-25 mb-5'>Boost your links today</h2>
         <div>Get Started</div>
       </div>
