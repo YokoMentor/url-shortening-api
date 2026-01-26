@@ -17,25 +17,25 @@ function App() {
         </svg>
       </div>
       <div className='flex flex-col items-center'>
-      <div className='flex flex-col'>
-        <img src={illustration} alt="illustration" className='w-[502px] h-[330px] object-cover mb-9 object-left'></img>
+      <div className='flex flex-col md:flex-row-reverse md:text-left'>
+        <img src={illustration} alt="illustration" className='w-[502px] h-[330px] md:w-[737px] h-[484px] object-cover mb-9 object-left'></img>
         <div className='flex flex-col'>
-          <h1 className='font-bold text-[40px] leading-[46px] text-gray-950 mb-4'>More than just shorter links</h1>
-          <p className='text-[18px] text-gray-500 px-5 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+          <h1 className='font-bold text-[40px] md:text-[80px] leading-[46px] md:leading-[86px] text-gray-950 mb-4 md:mb-1 md:tracking-tight'>More than just shorter links</h1>
+          <p className='text-[18px] md:text-[22px] text-gray-500 pl-5 pr-5 md:pl-0 md:pr-26 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
           <div>Get Started</div>
         </div>
       </div>
       <div className='relative flex flex-col justify-center items-center mt-30'>
-        <form className='flex flex-col justify-center items-center w-[327px] h-[160px] bg-primary-purple rounded-xl absolute bottom'>
-          <div className='flex flex-col'>
+        <form className='flex flex-col justify-center items-center w-[327px] md:w-[1110px] h-[160px] md:h-[168px] bg-primary-purple rounded-xl absolute bottom'>
+          <div className='flex flex-col md:flex-row justify-center items-center'>
             <label htmlFor="name" className='mb-2'></label>
             <input type="text" id="name" placeholder='Shorten a link here...'
-            className='text-[16px] text-gray-700 w-[279px] h-[50px] rounded-md bg-white cursor-pointer pl-4'/>
-            <button className='w-[279px] h-[48px] rounded-md bg-primary-blue text-[18px] text-white font-bold mt-4'>Shorten it!</button>
+            className='text-[16px] md:text-[20px] text-gray-700 w-[279px] h-[50px] md:w-[768px] md:h-[65px] rounded-md bg-white cursor-pointer pl-4 md:pl-8 md:font-bold'/>
+            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-0 md:ml-6'>Shorten it!</button>
           </div>
         </form>
       </div>
-      <div className='flex flex-col bg-bg-gray pt-42'>
+      <div className='flex flex-col bg-bg-gray pt-42 md:w-full'>
         <div className='px-5 mb-14'>
           <h2 className='font-bold text-[27px] text-gray-950 mb-5'>Advanced Statistics</h2>
           <p className='text-[16px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
