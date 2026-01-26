@@ -2,6 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import logo from './images/logo.svg'
 import illustration from './images/illustration-working.svg'
+import facebook from './images/icon-facebook.svg'
+import twitter from './images/icon-twitter.svg'
+import pinterest from './images/icon-pinterest.svg'
+import instagram from './images/icon-instagram.svg'
 
 function App() {
   return (
@@ -54,9 +58,39 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col justify-content items-center bg-primary-purple h-[300px] w-full'>
-        <h2 className='font-bold text-[27px] text-white mb-5'>Boost your links today</h2>
+      <div className='bg-primary-purple h-[300px] w-full'>
+        <h2 className='font-bold text-[27px] text-white mt-25 mb-5'>Boost your links today</h2>
         <div>Get Started</div>
+      </div>
+      <div className='bg-gray-950 w-full h-[776px] text-white pt-11'>
+        <h2 className='font-bold text-[33px] mb-11'>Shortly</h2>
+        <div>
+          <div className='mb-10'>
+            <h3 className='text-white text-[15px] mb-5'>Features</h3>
+            <p className='text-gray-500 text-[15px] mb-3'>Link Shortening</p>
+            <p className='text-gray-500 text-[15px] mb-3'>Branded Links</p>
+            <p className='text-gray-500 text-[15px] mb-3'>Analytics</p>
+          </div>
+          <div className='mb-10'>
+            <h3 className='text-white text-[15px] mb-5'>Resources</h3>
+            <p className='text-gray-500 text-[15px] mb-3'>Blog</p>
+            <p className='text-gray-500 text-[15px] mb-3'>Developers</p>
+            <p className='text-gray-500 text-[15px] mb-3'>Support</p>
+          </div>
+          <div className='mb-10'>
+            <h3 className='text-white text-[15px] mb-5'>Company</h3>
+            <p className='text-gray-500 text-[15px] mb-3'>About</p>
+            <p className='text-gray-500 text-[15px] mb-3'>Our Team</p>
+            <p className='text-gray-500 text-[15px] mb-3'>Careers</p>
+            <p className='text-gray-500 text-[15px] mb-3'>Contact</p>
+          </div>
+          <div className='flex flex-row justify-center items-center'>
+            <img src={facebook} alt="facebook" className='mr-6'></img>
+            <img src={twitter} alt="twitter" className='mr-6'></img>
+            <img src={pinterest} alt="pinterest" className='mr-6'></img>
+            <img src={instagram} alt="instagram"></img>
+          </div>
+        </div>
       </div>
       </div>
     </div>
