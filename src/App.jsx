@@ -35,10 +35,10 @@ function App() {
           </div>
         </form>
       </div>
-      <div className='flex flex-col bg-bg-gray pt-42 md:w-full'>
-        <div className='px-5 mb-14'>
-          <h2 className='font-bold text-[27px] text-gray-950 mb-5'>Advanced Statistics</h2>
-          <p className='text-[16px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
+      <div className='flex flex-col justify-center items-center bg-bg-gray pt-42 md:w-full'>
+        <div className='px-5 mb-14 md:w-[550px] md:mt-9'>
+          <h2 className='font-bold text-[27px] md:text-[40px] text-gray-950 mb-5 md:mb-3 md:tracking-tight'>Advanced Statistics</h2>
+          <p className='text-[16px] md:text-[18px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
         </div>
         <div className='flex flex-col justify-center items-center'>
           <div className='relative flex flex-col justify-center items-center w-[327px] h-[268px] bg-white rounded-md mt-8 mb-14 px-5'>
