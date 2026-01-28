@@ -62,33 +62,35 @@ function App() {
         <h2 className='font-bold text-[27px] md:text-[40px] text-white mt-25 mb-5 md:tracking-tight'>Boost your links today</h2>
         <div>Get Started</div>
       </div>
-      <div className='bg-gray-950 w-full h-[776px] text-white pt-11'>
-        <h2 className='font-bold text-[33px] mb-11'>Shortly</h2>
-        <div>
-          <div className='mb-10'>
-            <h3 className='text-white text-[15px] mb-5'>Features</h3>
-            <p className='text-gray-500 text-[15px] mb-3'>Link Shortening</p>
-            <p className='text-gray-500 text-[15px] mb-3'>Branded Links</p>
-            <p className='text-gray-500 text-[15px] mb-3'>Analytics</p>
-          </div>
-          <div className='mb-10'>
-            <h3 className='text-white text-[15px] mb-5'>Resources</h3>
-            <p className='text-gray-500 text-[15px] mb-3'>Blog</p>
-            <p className='text-gray-500 text-[15px] mb-3'>Developers</p>
-            <p className='text-gray-500 text-[15px] mb-3'>Support</p>
-          </div>
-          <div className='mb-10'>
-            <h3 className='text-white text-[15px] mb-5'>Company</h3>
-            <p className='text-gray-500 text-[15px] mb-3'>About</p>
-            <p className='text-gray-500 text-[15px] mb-3'>Our Team</p>
-            <p className='text-gray-500 text-[15px] mb-3'>Careers</p>
-            <p className='text-gray-500 text-[15px] mb-3'>Contact</p>
-          </div>
-          <div className='flex flex-row justify-center items-center'>
-            <img src={facebook} alt="facebook" className='mr-6'></img>
-            <img src={twitter} alt="twitter" className='mr-6'></img>
-            <img src={pinterest} alt="pinterest" className='mr-6'></img>
-            <img src={instagram} alt="instagram"></img>
+      <div className='flex flex-col bg-gray-950 w-full h-[776px] text-white pt-11'>
+        <div className='flex flex-col justify-center md:flex-row md:w-[1110px]'>
+          <h2 className='font-bold text-[33px] mb-11 md:mr-65'>Shortly</h2>
+          <div className='flex flex-col md:flex-row md:text-left'>
+            <div className='mb-7 md:mr-20'>
+              <h3 className='text-white text-[15px] mb-5'>Features</h3>
+              <p className='text-gray-500 text-[15px] mb-3'>Link Shortening</p>
+              <p className='text-gray-500 text-[15px] mb-3'>Branded Links</p>
+              <p className='text-gray-500 text-[15px] mb-3'>Analytics</p>
+            </div>
+            <div className='mb-7 md:mr-26'>
+              <h3 className='text-white text-[15px] mb-5'>Resources</h3>
+              <p className='text-gray-500 text-[15px] mb-3'>Blog</p>
+              <p className='text-gray-500 text-[15px] mb-3'>Developers</p>
+              <p className='text-gray-500 text-[15px] mb-3'>Support</p>
+            </div>
+            <div className='mb-7 md:mr-26'>
+              <h3 className='text-white text-[15px] mb-5'>Company</h3>
+              <p className='text-gray-500 text-[15px] mb-3'>About</p>
+              <p className='text-gray-500 text-[15px] mb-3'>Our Team</p>
+              <p className='text-gray-500 text-[15px] mb-3'>Careers</p>
+              <p className='text-gray-500 text-[15px] mb-3'>Contact</p>
+            </div>
+            <div className='flex flex-row justify-center items-center md:h-[30px]'>
+              <img src={facebook} alt="facebook" className='mr-6'></img>
+              <img src={twitter} alt="twitter" className='mr-6'></img>
+              <img src={pinterest} alt="pinterest" className='mr-6'></img>
+              <img src={instagram} alt="instagram"></img>
+            </div>
           </div>
         </div>
       </div>
