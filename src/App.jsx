@@ -58,8 +58,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='bg-[url(./images/bg-boost-mobile.svg)] md:bg-[url(./images/bg-boost-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple h-[300px] w-full'>
-        <h2 className='font-bold text-[27px] text-white mt-25 mb-5'>Boost your links today</h2>
+      <div className='bg-[url(./images/bg-boost-mobile.svg)] md:bg-[url(./images/bg-boost-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple h-[300px] md:h-[250px] w-full'>
+        <h2 className='font-bold text-[27px] md:text-[40px] text-white mt-25 mb-5 md:tracking-tight'>Boost your links today</h2>
         <div>Get Started</div>
       </div>
       <div className='bg-gray-950 w-full h-[776px] text-white pt-11'>
