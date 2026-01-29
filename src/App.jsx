@@ -41,16 +41,18 @@ function App() {
           <p className='text-[16px] md:text-[18px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
         </div>
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-center md:w-[1110px] md:mb-30'>
-          <div className='relative flex flex-col justify-center items-center md:items-start w-[327px] md:w-[350px] h-[268px] bg-white rounded-md mt-8 md:mt-0 mb-14 md:mb-0 px-5 md:px-7 md:text-left'>
+          <div className='relative flex flex-col justify-center items-center md:items-start w-[327px] md:w-[350px] h-[268px] bg-white rounded-md mt-8 md:mt-0 md:mb-0 px-5 md:px-7 md:text-left'>
             <div className='bg-primary-purple bg-[url(./images/icon-brand-recognition.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
             <h3 className='font-bold text-[22px] text-gray-950 mb-4 mt-11'>Brand Recognition</h3>
             <p className='text-gray-500 text-[15px] leading-[27px]'>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
           </div>
-          <div className='relative flex flex-col justify-center items-center md:items-start w-[327px] md:w-[350px] h-[268px] bg-white rounded-md mt-8 md:mt-22 mb-14 md:mb-0 px-5 md:px-7 md:text-left'>
+          <div className="flex justify-center relative border-[4px] h-[60px] border-primary-blue"></div>
+          <div className='relative flex flex-col justify-center items-center md:items-start w-[327px] md:w-[350px] h-[268px] bg-white rounded-md mt-8 md:mt-22 md:mb-0 px-5 md:px-7 md:text-left'>
             <div className='bg-primary-purple bg-[url(./images/icon-detailed-records.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
             <h3 className='font-bold text-[22px] text-gray-950 mb-4 mt-11'>Detailed Records</h3>
             <p className='text-gray-500 text-[15px] leading-[27px]'>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
           </div>
+                    <div className="flex justify-center relative border-[4px] h-[60px] border-primary-blue"></div>
           <div className='relative flex flex-col justify-center items-center md:items-start w-[327px] md:w-[350px] h-[268px] bg-white rounded-md mt-8 md:mt-42 mb-22 md:mb-0 px-5 md:px-7 md:text-left'>
             <div className='bg-primary-purple bg-[url(./images/icon-fully-customizable.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
             <h3 className='font-bold text-[22px] text-gray-950 mb-4 mt-11'>Fully Customizable</h3>
