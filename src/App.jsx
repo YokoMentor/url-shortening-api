@@ -64,7 +64,7 @@ function App() {
       </div>
       <div className='flex flex-col items-center bg-gray-950 w-full h-[776px] text-white pt-11'>
         <div className='flex flex-col justify-center md:flex-row md:w-[1110px] md:mt-7'>
-          <h2 className='font-bold text-[33px] mb-11 md:mr-65'>Shortly</h2>
+          <h2 className='font-bold text-[33px] mb-11 md:mr-65 md:-mt-3'>Shortly</h2>
           <div className='flex flex-col md:flex-row md:text-left'>
             <div className='mb-7 md:mr-20'>
               <h3 className='text-white text-[15px] mb-5'>Features</h3>
