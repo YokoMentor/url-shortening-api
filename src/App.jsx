@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import logo from './images/logo.svg'
-import illustration from './images/illustration-working.svg'
 import facebook from './images/icon-facebook.svg'
 import twitter from './images/icon-twitter.svg'
 import pinterest from './images/icon-pinterest.svg'
@@ -10,22 +9,25 @@ import instagram from './images/icon-instagram.svg'
 function App() {
   return (
     <div className="flex flex-col min-h-screen justify-center font-display text-center">
-      <div className='flex flex-row justify-between px-5 mb-9 mt-10'>
-        <img src={logo} alt="logo"></img>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-9 stroke-gray-500">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+      <div className='flex justify-center items-center'>
+        <div className='flex flex-row justify-between px-5 md:px-20 mb-8 md:mb-17 mt-10 md:mt-14 w-full md:w-[1110px]'>
+          <div>
+            <img src={logo} alt="logo"></img>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-9 stroke-gray-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </div>
       </div>
       <div className='flex flex-col items-center'>
-      <div className='flex flex-col md:flex-row-reverse md:text-left'>
-        <img src={illustration} alt="illustration" className='w-[502px] h-[330px] md:w-[737px] md:h-[484px] object-cover mb-9 object-left'></img>
-        <div className='flex flex-col'>
+      <div className='bg-[url(./images/illustration-working.svg)] bg-no-repeat bg-cover md:bg-auto h-[339px] md:h-[490px] w-full md:text-left bg-position-[1.2rem] md:bg-position-[52rem]'>
+        <div className='flex flex-col md:w-[566px] md:ml-40 mt-92 md:mt-20'>
           <h1 className='font-bold text-[40px] md:text-[80px] leading-[46px] md:leading-[86px] text-gray-950 mb-4 md:mb-1 md:tracking-tight'>More than just shorter links</h1>
-          <p className='text-[18px] md:text-[22px] text-gray-500 pl-5 pr-5 md:pl-0 md:pr-26 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+          <p className='text-[18px] md:text-[22px] text-gray-500 pl-5 pr-5 md:pr-0 md:pl-0 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
           <div>Get Started</div>
         </div>
       </div>
-      <div className='relative flex flex-col justify-center items-center mt-30'>
+      <div className='relative flex flex-col justify-center items-center mt-120 md:mt-37'>
         <form className='flex flex-col justify-center items-center w-[327px] md:w-[1110px] h-[160px] md:h-[168px] bg-[url(./images/bg-shorten-mobile.svg)] md:bg-[url(./images/bg-shorten-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple rounded-xl absolute bottom'>
           <div className='flex flex-col md:flex-row justify-center items-center'>
             <label htmlFor="name" className='mb-2'></label>
