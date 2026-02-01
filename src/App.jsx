@@ -21,10 +21,10 @@ function App() {
       </div>
       <div className='flex flex-col items-center'>
       <div className='bg-[url(./images/illustration-working.svg)] bg-no-repeat bg-cover md:bg-auto h-[339px] md:h-[490px] w-full md:text-left bg-position-[1.2rem] md:bg-position-[52rem]'>
-        <div className='flex flex-col md:w-[566px] md:ml-40 mt-92 md:mt-20'>
+        <div className='flex flex-col items-center md:items-start md:w-[566px] md:ml-40 mt-92 md:mt-20'>
           <h1 className='font-bold text-[40px] md:text-[80px] leading-[46px] md:leading-[86px] text-gray-950 mb-4 md:mb-1 md:tracking-tight'>More than just shorter links</h1>
-          <p className='text-[18px] md:text-[22px] text-gray-500 pl-5 pr-5 md:pr-0 md:pl-0 mb-8'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
-          <div>Get Started</div>
+          <p className='text-[18px] md:text-[22px] text-gray-500 pl-5 pr-5 md:pr-0 md:pl-0 mb-9'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+          <button className='w-[198px] h-[56px] rounded-full bg-primary-blue text-[20px] text-white font-bold mb-28'>Get Started</button>
         </div>
       </div>
       <div className='relative flex flex-col justify-center items-center mt-120 md:mt-37'>
@@ -63,8 +63,8 @@ function App() {
         </div>
       </div>
       <div className='bg-[url(./images/bg-boost-mobile.svg)] md:bg-[url(./images/bg-boost-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple h-[300px] md:h-[250px] w-full'>
-        <h2 className='font-bold text-[27px] md:text-[40px] text-white mt-25 mb-5 md:tracking-tight'>Boost your links today</h2>
-        <div>Get Started</div>
+        <h2 className='font-bold text-[27px] md:text-[40px] text-white mt-24 md:mt-15 mb-4 md:tracking-tight'>Boost your links today</h2>
+        <button className='w-[198px] h-[56px] rounded-full bg-primary-blue text-[20px] text-white font-bold mb-28'>Get Started</button>
       </div>
       <div className='flex flex-col items-center bg-gray-950 w-full h-[776px] text-white pt-11'>
         <div className='flex flex-col justify-center md:flex-row md:w-[1110px] md:mt-7'>
