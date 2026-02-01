@@ -24,7 +24,7 @@ function App() {
         <div className='flex flex-col items-center md:items-start md:w-[566px] md:ml-40 mt-92 md:mt-20'>
           <h1 className='font-bold text-[40px] md:text-[80px] leading-[46px] md:leading-[86px] text-gray-950 mb-4 md:mb-1 md:tracking-tight'>More than just shorter links</h1>
           <p className='text-[18px] md:text-[22px] text-gray-500 pl-5 pr-5 md:pr-0 md:pl-0 mb-9'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
-          <button className='w-[198px] h-[56px] rounded-full bg-primary-blue text-[20px] text-white font-bold mb-28'>Get Started</button>
+          <button className='w-[198px] h-[56px] rounded-full bg-primary-blue text-[20px] text-white font-bold mb-28 cursor-pointer'>Get Started</button>
         </div>
       </div>
       <div className='relative flex flex-col justify-center items-center mt-120 md:mt-37'>
@@ -33,7 +33,7 @@ function App() {
             <label htmlFor="name" className='mb-2'></label>
             <input type="text" id="name" placeholder='Shorten a link here...'
             className='text-[16px] md:text-[20px] text-gray-700 w-[279px] h-[50px] md:w-[768px] md:h-[65px] rounded-md bg-white cursor-pointer pl-4 md:pl-8 md:font-bold'/>
-            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-0 md:ml-6'>Shorten it!</button>
+            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-0 md:ml-6 cursor-pointer'>Shorten it!</button>
           </div>
         </form>
       </div>
@@ -64,7 +64,7 @@ function App() {
       </div>
       <div className='bg-[url(./images/bg-boost-mobile.svg)] md:bg-[url(./images/bg-boost-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple h-[300px] md:h-[250px] w-full'>
         <h2 className='font-bold text-[27px] md:text-[40px] text-white mt-24 md:mt-15 mb-4 md:tracking-tight'>Boost your links today</h2>
-        <button className='w-[198px] h-[56px] rounded-full bg-primary-blue text-[20px] text-white font-bold mb-28'>Get Started</button>
+        <button className='w-[198px] h-[56px] rounded-full bg-primary-blue text-[20px] text-white font-bold mb-28 cursor-pointer'>Get Started</button>
       </div>
       <div className='flex flex-col items-center bg-gray-950 w-full h-[776px] text-white pt-11'>
         <div className='flex flex-col justify-center md:flex-row md:w-[1110px] md:mt-7'>
