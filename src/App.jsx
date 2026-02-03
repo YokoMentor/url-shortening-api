@@ -7,6 +7,37 @@ import pinterest from './images/icon-pinterest.svg'
 import instagram from './images/icon-instagram.svg'
 
 function App() {
+
+  const borderStyleRegular = 'text-[16px] md:text-[20px] text-gray-700 w-[279px] h-[50px] md:w-[768px] md:h-[65px] rounded-md bg-white cursor-pointer pl-4 md:pl-8 md:font-bold outline-none'
+  const borderStyleError = 'text-[16px] md:text-[20px] text-error-red w-[279px] h-[50px] md:w-[768px] md:h-[65px] rounded-md bg-white cursor-pointer pl-4 md:pl-8 md:font-bold outline-none border-2 border-error-red border-solid'
+
+  const [link, setLink] = useState('');
+  const [linkError, setLinkError] = useState(false);
+
+  function handleLinkChange(event){
+    event.preventDefault();
+    setLink(event.target.value);
+  }
+
+  function validateLink(value) {
+    if (value.length == 0) {
+      setLinkError(true);
+    }
+  }
+
+  function isValidLink(value) {
+    if (value.length == 0) {
+      return false;
+    }
+    return true;
+  }
+
+  function handleShortenLinks(event) {
+    event.preventDefault();
+    setLinkError(false);
+    validateLink(link);
+  }
+  
   return (
     <div className="flex flex-col min-h-screen justify-center font-display text-center">
       <div className='flex justify-center items-center'>
@@ -28,12 +59,17 @@ function App() {
         </div>
       </div>
       <div className='relative flex flex-col justify-center items-center mt-120 md:mt-37'>
-        <form className='flex flex-col justify-center items-center w-[327px] md:w-[1110px] h-[160px] md:h-[168px] bg-[url(./images/bg-shorten-mobile.svg)] md:bg-[url(./images/bg-shorten-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple rounded-xl absolute bottom'>
-          <div className='flex flex-col md:flex-row justify-center items-center'>
-            <label htmlFor="name" className='mb-2'></label>
+        <form className='flex flex-col justify-center items-center w-[327px] md:w-[1110px] bg-[url(./images/bg-shorten-mobile.svg)] md:bg-[url(./images/bg-shorten-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple rounded-xl absolute bottom'>
+          <div className='flex flex-col justify-center items-center'>
+            <label htmlFor="name" className='mb-2 mt-[16px] md:mt-[52px]'></label>
             <input type="text" id="name" placeholder='Shorten a link here...'
-            className='text-[16px] md:text-[20px] text-gray-700 w-[279px] h-[50px] md:w-[768px] md:h-[65px] rounded-md bg-white cursor-pointer pl-4 md:pl-8 md:font-bold'/>
-            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-0 md:ml-6 cursor-pointer'>Shorten it!</button>
+            className={`${linkError ? borderStyleError : borderStyleRegular}`}
+            onChange={handleLinkChange}/>
+            {linkError && 
+            <div className='flex items-center text-error-red text-[12px] mt-1 italic mr-44'>
+              <p>Please add a link</p>
+            </div>}
+            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-13 md:ml-6 cursor-pointer mb-[24px] md:mb-[52px]' onClick={handleShortenLinks}>Shorten it!</button>
           </div>
         </form>
       </div>
