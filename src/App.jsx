@@ -67,7 +67,7 @@ function App() {
               className={`${linkError ? borderStyleError : borderStyleRegular}`}
               onChange={handleLinkChange}/>
               {linkError && 
-              <div className='md:absolute flex items-center text-error-red text-[16px] mt-1 italic mr-44 md:mr-0'>
+              <div className='md:absolute flex items-center text-error-red text-[12px] md:text-[16px] mt-1 italic mr-44 md:mr-0'>
                 <p>Please add a link</p>
               </div>}
             </div>
