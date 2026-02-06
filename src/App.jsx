@@ -1,10 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import logo from './images/logo.svg'
-import facebook from './images/icon-facebook.svg'
-import twitter from './images/icon-twitter.svg'
-import pinterest from './images/icon-pinterest.svg'
-import instagram from './images/icon-instagram.svg'
+import ShortenedLinks from './ShortenedLinks'
 
 function App() {
 
@@ -13,15 +10,19 @@ function App() {
 
   const [link, setLink] = useState('');
   const [linkError, setLinkError] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   function handleLinkChange(event){
     event.preventDefault();
     setLink(event.target.value);
+    setIsVisible(false);
   }
 
   function validateLink(value) {
     if (value.length == 0) {
       setLinkError(true);
+    } else {
+      setIsVisible(true);
     }
   }
 
@@ -74,6 +75,7 @@ function App() {
             <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-[52px] md:ml-6 cursor-pointer mb-[24px]' onClick={handleShortenLinks}>Shorten it!</button>
           </div>
         </form>
+        {isVisible && <ShortenedLinks link = {link}/>}
       </div>
       <div className='flex flex-col justify-center items-center bg-bg-gray pt-42 md:w-full'>
         <div className='px-5 mb-14 md:w-[550px] md:mt-9 md:mb-5'>
