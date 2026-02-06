@@ -60,16 +60,18 @@ function App() {
       </div>
       <div className='relative flex flex-col justify-center items-center mt-120 md:mt-37'>
         <form className='flex flex-col justify-center items-center w-[327px] md:w-[1110px] bg-[url(./images/bg-shorten-mobile.svg)] md:bg-[url(./images/bg-shorten-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple rounded-xl absolute bottom'>
-          <div className='flex flex-col justify-center items-center'>
-            <label htmlFor="name" className='mb-2 mt-[16px] md:mt-[52px]'></label>
-            <input type="text" id="name" placeholder='Shorten a link here...'
-            className={`${linkError ? borderStyleError : borderStyleRegular}`}
-            onChange={handleLinkChange}/>
-            {linkError && 
-            <div className='flex items-center text-error-red text-[12px] mt-1 italic mr-44'>
-              <p>Please add a link</p>
-            </div>}
-            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-13 md:ml-6 cursor-pointer mb-[24px] md:mb-[52px]' onClick={handleShortenLinks}>Shorten it!</button>
+          <div className='flex flex-col md:flex-row justify-center items-center md:items-start'>
+            <div className='mt-[24px] md:mt-[52px] md:mb-[52px]'>
+              <label htmlFor="name" className='mb-2'></label>
+              <input type="text" id="name" placeholder='Shorten a link here...'
+              className={`${linkError ? borderStyleError : borderStyleRegular}`}
+              onChange={handleLinkChange}/>
+              {linkError && 
+              <div className='md:absolute flex items-center text-error-red text-[16px] mt-1 italic mr-44 md:mr-0'>
+                <p>Please add a link</p>
+              </div>}
+            </div>
+            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-[52px] md:ml-6 cursor-pointer mb-[24px]' onClick={handleShortenLinks}>Shorten it!</button>
           </div>
         </form>
       </div>
