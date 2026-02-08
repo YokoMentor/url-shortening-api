@@ -59,8 +59,8 @@ function App() {
           <button className='w-[198px] h-[56px] rounded-full bg-primary-blue text-[20px] text-white font-bold mb-28 cursor-pointer'>Get Started</button>
         </div>
       </div>
-      <div className='relative flex flex-col justify-center items-center mt-120 md:mt-37'>
-        <form className='flex flex-col justify-center items-center w-[327px] md:w-[1110px] bg-[url(./images/bg-shorten-mobile.svg)] md:bg-[url(./images/bg-shorten-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple rounded-xl absolute bottom'>
+      <div className='flex flex-col justify-center items-center mt-100 md:mt-37 w-full bg-gradient-to-b from-white from-50% to-bg-gray to-50%'>
+        <form className='flex flex-col justify-center items-center w-[327px] md:w-[1110px] bg-[url(./images/bg-shorten-mobile.svg)] md:bg-[url(./images/bg-shorten-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple rounded-xl'>
           <div className='flex flex-col md:flex-row justify-center items-center md:items-start'>
             <div className='mt-[24px] md:mt-[52px] md:mb-[52px]'>
               <label htmlFor="name" className='mb-2'></label>
@@ -75,9 +75,9 @@ function App() {
             <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-[52px] md:ml-6 cursor-pointer mb-[24px]' onClick={handleShortenLinks}>Shorten it!</button>
           </div>
         </form>
-        {isVisible && <ShortenedLinks link = {link}/>}
       </div>
-      <div className='flex flex-col justify-center items-center bg-bg-gray pt-42 md:w-full'>
+      <div className='flex flex-col justify-center items-center bg-bg-gray pt-6 md:w-full'>
+        {isVisible && <ShortenedLinks link = {link}/>}
         <div className='px-5 mb-14 md:w-[550px] md:mt-9 md:mb-5'>
           <h2 className='font-bold text-[27px] md:text-[40px] text-gray-950 mb-5 md:mb-3 md:tracking-tight'>Advanced Statistics</h2>
           <p className='text-[16px] md:text-[18px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
