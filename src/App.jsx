@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import logo from './images/logo.svg'
-import ShortenedLinks from './ShortenedLinks'
+import LinkShortening from './LinkShortening'
+const apiKey = 'f1e7c95869df4e98930810d4407f93c4'
+const url = 'https://api.rebrandly.com/v1/links'
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
   const [link, setLink] = useState('');
   const [linkError, setLinkError] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [shortenedLink, setShortenedLink] = useState('');
 
   function handleLinkChange(event){
     event.preventDefault();
@@ -41,6 +44,25 @@ function App() {
     event.preventDefault();
     setLinkError(false);
     validateLink(link);
+    if (isValidLink(link)) {
+      shortenUrl();
+    }
+  }
+
+  function shortenUrl() {
+    
+    const data = JSON.stringify({destination: link});
+
+    fetch(url, {
+      method:'POST',
+      headers: {
+      'Content-type': 'application/json',
+      'apikey': apiKey
+      },
+      body: data
+    });
+
+    setShortenedLink(link);
   }
   
   return (
@@ -68,7 +90,7 @@ function App() {
           <div className='flex flex-col md:flex-row justify-center items-center md:items-start'>
             <div className='mt-[24px] md:mt-[52px] md:mb-[52px]'>
               <label htmlFor="name" className='mb-2'></label>
-              <input type="text" id="name" placeholder='Shorten a link here...'
+              <input type="text" id="link" placeholder='Shorten a link here...'
               className={`${linkError ? borderStyleError : borderStyleRegular}`}
               onChange={handleLinkChange}/>
               {linkError && 
@@ -81,7 +103,7 @@ function App() {
         </form>
       </div>
       <div className='flex flex-col justify-center items-center bg-bg-gray pt-6 md:w-full'>
-        {isVisible && <ShortenedLinks link = {link}/>}
+        {isVisible && <LinkShortening link = {link} shortenedLink = {shortenedLink}/>}
         <div className='px-5 mb-14 md:w-[550px] md:mt-9 md:mb-5'>
           <h2 className='font-bold text-[27px] md:text-[40px] text-gray-950 mb-5 md:mb-3 md:tracking-tight'>Advanced Statistics</h2>
           <p className='text-[16px] md:text-[18px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
