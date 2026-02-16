@@ -50,6 +50,8 @@ function App() {
   }
 
   const shortenUrl = async () => {
+    setShortenedLink('www.postimees.ee');
+    return
     const data = JSON.stringify({destination: link});
     try {
       const response = await fetch (
@@ -64,7 +66,7 @@ function App() {
       );
       if(response.ok) {
         const jsonResponse = await response.json();
-        setShortenedLink(jsonResponse.shortUrl);
+        setShortenedLink('www.postimees.ee');
       }
     } catch (error) {
       console.log(error);
