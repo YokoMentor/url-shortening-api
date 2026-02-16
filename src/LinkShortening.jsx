@@ -2,11 +2,23 @@ import { useState } from 'react'
 import './App.css'
 
 function LinkShortening ({link, shortenedLink}) {
+  const [btnLabel, setBtnLabel] = useState('Copy');
+  const [btnColor, setBtnColor] = useState(true);
+  const btnStyle = 'w-[279px] h-[40px] md:w-[120px] md:h-[40px] rounded-md bg-primary-blue text-[18px] md:text-[16px] text-white font-bold cursor-pointer mb-[16px] md:mb-0 md:mr-6'
+  const btnStyleCopied = 'w-[279px] h-[40px] md:w-[120px] md:h-[40px] rounded-md bg-primary-purple text-[18px] md:text-[16px] text-white font-bold cursor-pointer mb-[16px] md:mb-0 md:mr-6'
 
   function handleCopy () {
     navigator.clipboard.writeText(shortenedLink)
     .then(() => console.log('Text copied'))
     .catch(err => console.error('Failed to copy:', err))
+
+    if(btnLabel == 'Copy') {
+      setBtnLabel('Copied');
+      setBtnColor(false);
+    } else {
+      setBtnLabel('Copy');
+      setBtnColor(true);
+    }
   }
 
   return (
@@ -17,7 +29,7 @@ function LinkShortening ({link, shortenedLink}) {
           <hr className='border-bg-gray border-1 md:border-0 w-full md:w-0 mb-3 md:mb-0'/>
           <div className='text-primary-blue mb-2 md:mb-0'>{shortenedLink}</div>
         </div>
-        <button className='w-[279px] h-[40px] md:w-[120px] md:h-[40px] rounded-md bg-primary-blue text-[18px] md:text-[16px] text-white font-bold cursor-pointer mb-[16px] md:mb-0 md:mr-6' onClick = {handleCopy}>Copy</button>
+        <button className={`${btnColor ? btnStyle : btnStyleCopied}`} onClick = {handleCopy}>{btnLabel}</button>
       </div>
     </div>
   )
