@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import logo from './images/logo.svg'
 import LinkShortening from './LinkShortening'
-const apiKey = 'f1e7c95869df4e98930810d4407f93c4'
+const apiKey = '86f329ca14bb48579a7283e6fd2ee554'
 const url = 'https://api.rebrandly.com/v1/links'
 
 function App() {
@@ -49,20 +49,26 @@ function App() {
     }
   }
 
-  function shortenUrl() {
-    
+  const shortenUrl = async () => {
     const data = JSON.stringify({destination: link});
-
-    fetch(url, {
-      method:'POST',
-      headers: {
-      'Content-type': 'application/json',
-      'apikey': apiKey
-      },
-      body: data
-    });
-
-    setShortenedLink(link);
+    try {
+      const response = await fetch (
+          url, {
+          method:'POST',
+          body: data,
+          headers: {
+          'Content-type': 'application/json',
+          'apikey': apiKey
+          }
+        }
+      );
+      if(response.ok) {
+        const jsonResponse = await response.json();
+        setShortenedLink(jsonResponse.shortUrl);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   }
   
   return (
