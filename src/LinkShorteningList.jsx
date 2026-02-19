@@ -4,7 +4,7 @@ import './App.css'
 function LinkShorteningList ({link, shortenedLink, handleCopy}) {
   const [btnLabel, setBtnLabel] = useState('Copy');
   const [btnColor, setBtnColor] = useState(true);
-  const btnStyle = 'w-[279px] h-[40px] md:w-[120px] md:h-[40px] rounded-md bg-primary-blue text-[18px] md:text-[16px] text-white font-bold cursor-pointer mb-[16px] md:mb-0 md:mr-6'
+  const btnStyle = 'w-[279px] h-[40px] md:w-[120px] md:h-[40px] rounded-md bg-primary-blue hover:bg-hover text-[18px] md:text-[16px] text-white font-bold cursor-pointer mb-[16px] md:mb-0 md:mr-6'
   const btnStyleCopied = 'w-[279px] h-[40px] md:w-[120px] md:h-[40px] rounded-md bg-primary-purple text-[18px] md:text-[16px] text-white font-bold cursor-pointer mb-[16px] md:mb-0 md:mr-6'
 
   const shallow = shortenedLink

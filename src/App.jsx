@@ -10,7 +10,7 @@ function App() {
   const borderStyleRegular = 'text-[16px] md:text-[20px] text-gray-700 w-[279px] h-[50px] md:w-[768px] md:h-[65px] rounded-md bg-white cursor-pointer pl-4 md:pl-8 md:font-bold outline-none'
   const borderStyleError = 'text-[16px] md:text-[20px] text-error-red w-[279px] h-[50px] md:w-[768px] md:h-[65px] rounded-md bg-white cursor-pointer pl-4 md:pl-8 md:font-bold outline-none border-2 border-error-red border-solid'
   const shortlyHeading = 'text-white text-[15px] mb-5';
-  const shortlyItem = 'text-gray-500 text-[15px] mb-3';
+  const shortlyItem = 'text-gray-500 hover:text-primary-blue text-[15px] mb-3 cursor-pointer';
   const statsHeading = 'font-bold text-[22px] text-gray-950 mb-4 mt-11';
   const statsDescr = 'text-gray-500 text-[15px] leading-[27px]';
 
@@ -98,7 +98,7 @@ function App() {
         <div className='flex flex-col items-center md:items-start md:w-[566px] md:ml-40 mt-92 md:mt-20'>
           <h1 className='font-bold text-[40px] md:text-[80px] leading-[46px] md:leading-[86px] text-gray-950 mb-4 md:mb-1 md:tracking-tight'>More than just shorter links</h1>
           <p className='text-[18px] md:text-[22px] text-gray-500 pl-5 pr-5 md:pr-0 md:pl-0 mb-9'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
-          <button className='w-[198px] h-[56px] rounded-full bg-primary-blue text-[20px] text-white font-bold mb-28 cursor-pointer'>Get Started</button>
+          <button className='w-[198px] h-[56px] rounded-full bg-primary-blue hover:bg-hover text-[20px] text-white font-bold mb-28 cursor-pointer'>Get Started</button>
         </div>
       </div>
       <div className='flex flex-col justify-center items-center mt-100 md:mt-37 w-full bg-gradient-to-b from-white from-50% to-bg-gray to-50%'>
@@ -114,7 +114,7 @@ function App() {
                 <p>Please add a link</p>
               </div>}
             </div>
-            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-[52px] md:ml-6 cursor-pointer mb-[24px]' type="submit">Shorten it!</button>
+            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue hover:bg-hover text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-[52px] md:ml-6 cursor-pointer mb-[24px]' type="submit">Shorten it!</button>
           </div>
         </form>
       </div>
@@ -146,7 +146,7 @@ function App() {
       </div>
       <div className='bg-[url(./images/bg-boost-mobile.svg)] md:bg-[url(./images/bg-boost-desktop.svg)] bg-no-repeat bg-top-right bg-primary-purple h-[300px] md:h-[250px] w-full'>
         <h2 className='font-bold text-[27px] md:text-[40px] text-white mt-24 md:mt-15 mb-4 md:tracking-tight'>Boost your links today</h2>
-        <button className='w-[198px] h-[56px] rounded-full bg-primary-blue text-[20px] text-white font-bold mb-28 cursor-pointer'>Get Started</button>
+        <button className='w-[198px] h-[56px] rounded-full bg-primary-blue hover:bg-hover text-[20px] text-white font-bold mb-28 cursor-pointer'>Get Started</button>
       </div>
       <div className='flex flex-col items-center bg-gray-950 w-full h-[776px] text-white pt-11'>
         <div className='flex flex-col justify-center md:flex-row md:w-[1110px] md:mt-7'>
