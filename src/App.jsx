@@ -18,7 +18,9 @@ function App() {
   const [linkError, setLinkError] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [shortenedLink, setShortenedLink] = useState('');
+  const [shortenedLinkList, setShortenedLinkList] = useState([]);
   const [inputList, setInputList] = useState([]);
+  const [indx, setIndx] = useState(0);
 
   function handleLinkChange(event){
     event.preventDefault();
@@ -52,8 +54,12 @@ function App() {
   }
 
   const shortenUrl = async () => {
-    setShortenedLink('www.postimees.ee');
+    setShortenedLink('www.postimees.ee' + indx);
+    setShortenedLinkList([...shortenedLinkList, 'www.postimees.ee' + indx]);
+    setIndx(indx+1);
+    
     return
+    
     const data = JSON.stringify({destination: link});
     try {
       const response = await fetch (
@@ -68,7 +74,7 @@ function App() {
       );
       if(response.ok) {
         const jsonResponse = await response.json();
-        setShortenedLink('www.postimees.ee');
+        setShortenedLinkList([...shortenedLinkList, jsonResponse.shortUrl]);
       }
     } catch (error) {
       console.log(error);
@@ -113,7 +119,7 @@ function App() {
         </form>
       </div>
       <div className='flex flex-col justify-center items-center bg-bg-gray pt-6 md:w-full'>
-        {isVisible && <LinkShortening link = {link} shortenedLink = {shortenedLink} inputList = {inputList}/>}
+        {isVisible && <LinkShortening link = {link} shortenedLinkList = {shortenedLinkList} inputList = {inputList}/>}
         <div className='px-5 mb-14 md:w-[550px] md:mt-9 md:mb-5'>
           <h2 className='font-bold text-[27px] md:text-[40px] text-gray-950 mb-5 md:mb-3 md:tracking-tight'>Advanced Statistics</h2>
           <p className='text-[16px] md:text-[18px] text-gray-500 leading-[28px]'>Track how your links are performing scross the web with out advanced statistics dashboard.</p>
