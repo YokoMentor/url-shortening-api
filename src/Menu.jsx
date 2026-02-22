@@ -18,18 +18,38 @@ function Menu() {
 
   return (
     <div>
-      <div className='flex justify-center items-center'>
-        <div className='flex flex-row justify-between px-5 md:px-20 mb-8 md:mb-17 mt-10 md:mt-14 w-full md:w-[1110px]'>
-          <div>
-            <img src={logo} alt="logo"></img>
+      <div className='md:hidden'>
+        <div className='flex justify-center items-center'>
+          <div className='flex flex-row justify-between px-5 mb-8 mt-10 w-full'>
+            <div>
+              <img src={logo} alt="logo"></img>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-9 stroke-gray-500" onClick={handleMenuClick}>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-9 stroke-gray-500" onClick={handleMenuClick}>
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
+        </div>
+        {dropDownMenuIsVisible && <DropDownMenu/>}
+      </div>
+      <div className='hidden md:flex justify-center items-center'>
+        <div className='flex flex-row justify-between mb-8 mb-17 mt-10 mt-14 w-[1110px]'>
+          <div className='flex flex-row justify-center items-center font-bold text-gray-500'>
+            <div className='mr-12'>
+              <img src={logo} alt="logo"></img>
+            </div>
+            <div className='mr-6 cursor-pointer hover:text-gray-950'>Features</div>
+            <div className='mr-6 cursor-pointer hover:text-gray-950'>Pricing</div>
+            <div className='cursor-pointer hover:text-gray-950'>Resources</div>
+          </div>
+          <div className='flex flex-row justify-center items-center font-bold'>
+            <div className='text-gray-500 cursor-pointer hover:text-gray-950'>Login</div>
+            <button className='w-[105px] h-[40px] rounded-full bg-primary-blue hover:bg-hover cursor-pointer text-white ml-10'>Sign up</button>
+          </div>
         </div>
       </div>
-      {dropDownMenuIsVisible && <DropDownMenu/>}
     </div>
+
+
   )
 }
 
