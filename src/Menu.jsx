@@ -18,8 +18,8 @@ function Menu() {
 
   return (
     <div>
-      <div className='md:hidden'>
-        <div className='flex justify-center items-center'>
+      <div>
+        <div className='md:hidden sm:visible flex justify-center items-center'>
           <div className='flex flex-row justify-between px-5 mb-8 mt-10 w-full'>
             <div>
               <img src={logo} alt="logo"></img>
@@ -32,7 +32,7 @@ function Menu() {
         {dropDownMenuIsVisible && <DropDownMenu/>}
       </div>
       <div className='hidden md:flex justify-center items-center'>
-        <div className='flex flex-row justify-between mb-8 mb-17 mt-10 mt-14 w-[1110px]'>
+        <div className='flex flex-row justify-between mb-8 mb-17 mt-10 mt-14 w-[1110px] ml-6 mr-6'>
           <div className='flex flex-row justify-center items-center font-bold text-gray-500'>
             <div className='mr-12'>
               <img src={logo} alt="logo"></img>

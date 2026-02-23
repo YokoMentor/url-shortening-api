@@ -12,5 +12,6 @@
   --color-gray-900: hsl(255, 11%, 22%);
   --color-gray-950: hsl(260, 8%, 14%);
   --color-white: hsl(0, 100%, 100%);
-  --color-bg-gray: hsl(230, 25%, 95%)
+  --color-bg-gray: hsl(230, 25%, 95%);
+  --breakpoint-md: 75rem
 }

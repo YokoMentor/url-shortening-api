@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import logo from './images/logo.svg'
 import LinkShortening from './LinkShortening'
 import Menu from './Menu'
 const apiKey = '86f329ca14bb48579a7283e6fd2ee554'
@@ -106,7 +105,7 @@ function App() {
                 <p>Please add a link</p>
               </div>}
             </div>
-            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue hover:bg-hover text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-[52px] md:ml-6 cursor-pointer mb-[24px]' type="submit">Shorten it!</button>
+            <button className='w-[279px] h-[48px] md:w-[189px] md:h-[65px] rounded-md bg-primary-blue hover:bg-hover text-[18px] md:text-[20px] text-white font-bold mt-4 md:mt-[52px] md:ml-6 sm:ml-0 cursor-pointer mb-[24px]' type="submit">Shorten it!</button>
           </div>
         </form>
       </div>
@@ -122,13 +121,13 @@ function App() {
             <h3 className={statsHeading}>Brand Recognition</h3>
             <p className={statsDescr}>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
           </div>
-          <div className="flex justify-center relative border-[4px] md:border-[4px] h-[60px] md:h-[0px] md:w-[34px] border-primary-blue md:mt-10"></div>
+          <div className="flex justify-center relative border-r-7 md:border-b-7 h-[60px] md:h-[0px] md:w-[34px] border-primary-blue mt-0 md:mt-10"></div>
           <div className='relative flex flex-col justify-center items-center md:items-start w-[327px] md:w-[350px] h-[268px] bg-white rounded-md mt-8 md:mt-22 md:mb-0 px-5 md:px-7 md:text-left'>
             <div className='bg-primary-purple bg-[url(./images/icon-detailed-records.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
             <h3 className={statsHeading}>Detailed Records</h3>
             <p className={statsDescr}>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
           </div>
-          <div className="flex justify-center relative border-[4px] md:border-[4px] h-[60px] md:h-[0px] md:w-[34px] border-primary-blue md:mt-10"></div>
+          <div className="flex justify-center relative border-r-7 md:border-b-7 h-[60px] md:h-[0px] md:w-[34px] border-primary-blue mt-0 md:mt-10"></div>
           <div className='relative flex flex-col justify-center items-center md:items-start w-[327px] md:w-[350px] h-[268px] bg-white rounded-md mt-8 md:mt-42 mb-22 md:mb-0 px-5 md:px-7 md:text-left'>
             <div className='bg-primary-purple bg-[url(./images/icon-fully-customizable.svg)] bg-no-repeat bg-center w-[89px] h-[89px] rounded-full absolute top-[-44px]'></div>
             <h3 className={statsHeading}>Fully Customizable</h3>
@@ -142,21 +141,21 @@ function App() {
       </div>
       <div className='flex flex-col items-center bg-gray-950 w-full h-[776px] text-white pt-11'>
         <div className='flex flex-col justify-center md:flex-row md:w-[1110px] md:mt-7'>
-          <h2 className='font-bold text-[33px] mb-11 md:mr-65 md:-mt-3'>Shortly</h2>
-          <div className='flex flex-col md:flex-row md:text-left'>
-            <div className='mb-7 md:mr-20'>
+          <h2 className='font-bold text-[33px] mb-11 md:mr-65 sm:mr-0 md:-mt-3'>Shortly</h2>
+          <div className='flex flex-col md:flex-row md:text-left sm:text-center'>
+            <div className='mb-7 md:mr-20 sm:mr-0'>
               <h3 className={shortlyHeading}>Features</h3>
               <p className={shortlyItem}>Link Shortening</p>
               <p className={shortlyItem}>Branded Links</p>
               <p className={shortlyItem}>Analytics</p>
             </div>
-            <div className='mb-7 md:mr-26'>
+            <div className='mb-7 md:mr-26 sm:mr-0'>
               <h3 className={shortlyHeading}>Resources</h3>
               <p className={shortlyItem}>Blog</p>
               <p className={shortlyItem}>Developers</p>
               <p className={shortlyItem}>Support</p>
             </div>
-            <div className='mb-7 md:mr-26'>
+            <div className='mb-7 md:mr-26 sm:mr-0'>
               <h3 className={shortlyHeading}>Company</h3>
               <p className={shortlyItem}>About</p>
               <p className={shortlyItem}>Our Team</p>
